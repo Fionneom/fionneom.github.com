@@ -1,5 +1,6 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: 'https://fionneom.github.io',
+  base: '/', // Use '/' for your specific username-repo setup
+});
