@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Inter:wght@400;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-typewriter: "Special Elite", system-ui, serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+:root {
+  font-family: var(--font-sans);
+}

@@ -1,15 +1,22 @@
 ---
 const { pageTitle } = Astro.props;
+import '../styles/global.css'
 ---
 
-<html>
+<html class="scroll-smooth">
     <head>
         <title>
             Fionn &Oacute; Muir&iacute;
         </title>
     </head>
-    <body>
-        <h1>Fionn &Oacute; Muir&iacute;</h1>
-        <p1>This website is currently under construction... Thank you for your patience &#x1F64F;</p> 
-    </body>
+
+    <main class="max-w-5xl mx-auto px-6 py-12">
+        <slot />
+    </main>
+
+    <footer class="border-t border-slate-200 mt-20 py-10">
+      <div class="max-w-5xl mx-auto px-6 text-center text-slate-500 text-sm">
+        <p>&copy; {new Date().getFullYear()} Fionn &Oacute; Muir&iacute; <a class="underline" href="mailto:fionneomuiri@gmail.com">fionneomuiri@gmail.com</a></p>
+      </div>
+    </footer>
 </html>
