@@ -1,0 +1,14 @@
+---
+const { title, description, images = [], link = "#"} = Astro.props;
+---
+
+<div class="group block bg-white border border-slate-300 rounded-lg overflow-hidden p-3">
+    <div>
+        <h3 class="font-typewriter text-2xl text-slate-900 mb-2">
+            {title}
+        </h3>
+        <p class="text-lg font-sans text-gray-700">
+            {description}
+        </p>
+    </div>
+</div>
